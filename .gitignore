@@ -1,0 +1,22 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Audio files (users can add their own)
+*.mp3
+*.ogg
+*.wav
+
+# Logs
+*.log
+
+# Node modules (if any)
+node_modules/
+

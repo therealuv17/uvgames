@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPYDERPUNK RACER PRO</title>
+    <link rel="stylesheet" href="race3d-pro-style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="ui-overlay">
+            <div class="speed">SPEED: <span id="speed">0</span> km/h</div>
+            <div class="distance">DISTANCE: <span id="distance">0</span>m</div>
+            <div class="boost">BOOST: <span id="boost">100</span>%</div>
+            <div class="stage">STAGE: <span id="stage">1</span></div>
+            <div class="drift" id="driftIndicator" style="display: none;">DRIFT!</div>
+            <button id="musicToggle" class="music-btn" style="margin-top: 10px;">🔊 Music: ON</button>
+        </div>
+        <div id="gameCanvas"></div>
+        <div id="startScreen" class="screen">
+            <h1>⚡ SPYDERPUNK RACER PRO ⚡</h1>
+            <p>Use ARROW KEYS or WASD to control</p>
+            <p>UP/DOWN: Accelerate/Brake</p>
+            <p>LEFT/RIGHT: Steer (Drift at high speed!)</p>
+            <p>SPACEBAR: Boost</p>
+            <p>Avoid obstacles on the road!</p>
+            <button id="startBtn">JACK IN</button>
+        </div>
+        <div id="gameOverScreen" class="screen hidden">
+            <h1>SESSION COMPLETE</h1>
+            <p>Distance Traveled: <span id="finalDistance">0</span>m</p>
+            <p>Top Speed: <span id="topSpeed">0</span> km/h</p>
+            <p>Time: <span id="finalTime">0</span>s</p>
+            <button id="restartBtn">RACE AGAIN</button>
+        </div>
+    </div>
+    <audio id="backgroundMusic" loop preload="auto">
+        <!-- Replace "mood.mp3" with your music file name -->
+        <!-- Examples: "mood.mp3", "song.mp3", "music.mp3" -->
+        <source src="mood.mp3" type="audio/mpeg">
+        <source src="mood.ogg" type="audio/ogg">
+        <!-- Fallback music if your file is not found -->
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="race3d-pro-game.js"></script>
+</body>
+</html>
+

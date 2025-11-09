@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosaur Game</title>
+    <link rel="stylesheet" href="dino-style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="ui-overlay">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="high-score">High Score: <span id="highScore">0</span></div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="startScreen" class="screen">
+            <h1>🦕 Dinosaur Game</h1>
+            <p>Press SPACE or UP ARROW to jump</p>
+            <p>Avoid the cactuses!</p>
+            <button id="startBtn">Start Game</button>
+        </div>
+        <div id="gameOverScreen" class="screen hidden">
+            <h1>Game Over!</h1>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <button id="restartBtn">Play Again</button>
+        </div>
+    </div>
+    <script src="dino-game.js"></script>
+</body>
+</html>
+

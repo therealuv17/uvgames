@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPYDERPUNK RACER</title>
+    <link rel="stylesheet" href="race3d-style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="ui-overlay">
+            <div class="speed">Speed: <span id="speed">0</span> km/h</div>
+            <div class="lap">Distance: <span id="lap">0m</span></div>
+        </div>
+        <div id="gameCanvas"></div>
+        <div id="startScreen" class="screen">
+            <h1>⚡ SPYDERPUNK RACER ⚡</h1>
+            <p>Use ARROW KEYS or WASD to control</p>
+            <p>UP/DOWN: Accelerate/Brake</p>
+            <p>LEFT/RIGHT: Steer</p>
+            <button id="startBtn">Start Game</button>
+        </div>
+        <div id="gameOverScreen" class="screen hidden">
+            <h1>Race Complete!</h1>
+            <p>Distance Traveled: <span id="finalPosition">0</span>m</p>
+            <p>Time: <span id="finalTime">0</span> seconds</p>
+            <button id="restartBtn">Play Again</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="race3d-game.js"></script>
+</body>
+</html>
+
